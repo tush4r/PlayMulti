@@ -6,10 +6,7 @@ import play.sbt.PlayScala
 
 object ApplicationBuild extends Build {
 
-  lazy val branch = "git rev-parse --abbrev-ref HEAD".!!.trim
-  lazy val commit = "git rev-parse --short HEAD".!!.trim
-  lazy val buildTime = new java.text.SimpleDateFormat("yyyyMMdd-HHmmss").format(new java.util.Date())
-  lazy val appVersion = "%s-%s-%s".format(branch, commit, buildTime)
+  lazy val appVersion = "0.1"
 
 
 
